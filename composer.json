@@ -1,0 +1,48 @@
+{
+  "name": "lianhechx/laravel-entrust",
+  "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
+  "keywords": [
+    "laravel",
+    "roles",
+    "acl",
+    "permission"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Chen",
+      "email": "lianhechx@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "illuminate/console": "~5.0",
+    "illuminate/support": "~5.0",
+    "illuminate/cache": "~5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.1",
+    "mockery/mockery": "dev-master",
+    "illuminate/database": "~5.0",
+    "sami/sami": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "src/commands"
+    ],
+    "psr-4": {
+      "Opbol\\Entrust\\": "src/Entrust/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/Middleware/MiddlewareTest.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
